@@ -2,14 +2,12 @@ package task4;
 
 public class Main {
     public static void main(String[] args) {
-        Worker worker = new RobotWorker() {
+        Worker human = new HumanWorker();
+        Eating humanEating = new HumanWorker();
+        Worker robot = new RobotWorker();
 
-
-            public void eat() {
-
-            }
-        };
-        worker.work();
-        worker.eat(); // Здесь возникнет исключение UnsupportedOperationException
+        human.work(); // Output: Человек работает
+        humanEating.eat(); // Output: Человек ест
+        robot.work(); // Output: Робот работает
     }
 }

@@ -1,6 +1,10 @@
 package task5;
 public class Printer {
+    private TextPrinter textPrinter;
+    public Printer(TextPrinter textPrinter) {
+        this.textPrinter = textPrinter;
+    }
     public void print(Text text) {
-        System.out.println(text.getText());
+        textPrinter.print(text.getText());
     }
 }

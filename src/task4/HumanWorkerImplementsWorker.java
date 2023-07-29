@@ -1,6 +1,6 @@
 package task4;
 
-abstract class HumanWorker implements Worker{
+class HumanWorker implements Worker, Eating {
     public void work() {
         System.out.println("Человек работает");
     }
